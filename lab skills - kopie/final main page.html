@@ -10,24 +10,34 @@
 </head>
 <body>
 
-<header id="head"> 
-  <h1> <image> <img src="biglogo.png" id="logo"/> </image> NUTRINATION </h1> 
+<header id="head">
+  <h1> <image> <img src="biglogo.png" id="logo"/> </image> NUTRINATION </h1>
 <h6> navigate trough the website by using these buttons.... </h6>
-<nav id="navigation"> 
+<nav id="navigation">
 <ul>
 	<li id="list">
 <figure>
-      <div class="tooltip" id="divnav"> 
+  <!-- REVIEW
+  you cannot enclose all this elements within the figure tag. You should place them directly outside the img tag
+  -->
+      <div class="tooltip" id="divnav">
         <a href="link to video page (not made yet) " class="myButton"><img src="icons/icon food.png" id="buttonimage"/>
          </a>
+         <!-- REVIEW
+         try to look at the classnames, myButton isn't really semantic
+         id's should be unique in a page, you can only use them once, now you use the same in every menu item
+         -->
          <span class="tooltiptext"> NUTRITION </span>
       </div>
       </figure>
 
 </li>
 <li id="list">
+  <!-- REVIEW
+  same remark here about the id's
+  -->
 <figure>
-      <div class="tooltip" id="divnav"> 
+      <div class="tooltip" id="divnav">
       <a href="link to video page (not made yet) " class="myButton"><img src="icons/sport.png" id="buttonimage"/> </a>
       <span align="center" class="tooltiptext"> SPORT </span>
       </div>
@@ -35,14 +45,14 @@
       </li>
       <li id="list">
       <figure>
-      <div class="tooltip" id="divnav"> 
+      <div class="tooltip" id="divnav">
       <a href="link to video page (not made yet) " class="myButton"><img src="icons/location.png" id="buttonimage"/> </a>
       <span class="tooltiptext"> MAP </span> </div>
       </figure>
       </li>
       <li id="list">
       <figure>
-     <div class="tooltip" id="divnav"> 
+     <div class="tooltip" id="divnav">
       <a href="link to video page (not made yet) " class="myButton"><img src="icons/play button.png" id="buttonimage"/> </a>
       <span class="tooltiptext"> VIDEO </span> </div>
       </figure>
@@ -52,6 +62,10 @@
       </header>
 
 <article id="maps">
+  <!-- REVIEW
+ the article should be in a section for itself
+ below, every header is in a section, why is this necessary? Aren't these part of the article? I think you can do without them
+  -->
 <h2> ABOUT NUTRINATION </h2>
 <section> <h3> Nutrination focuses on providing information about sports and nutrition. Likewise, we provide diets customised to your needs. To support this we provide our personal secrets, applications, and other helpfull tools to effectively get fit, and make losing weight fun. Ofcourse we are not only focused on losing weight. We also provide an insight on "new" sports you might not have heard of. </h3></section>
 
@@ -64,13 +78,15 @@
 </article>
 
 <footer id="content">
-
+  <!-- REVIEW
+  you shouldn't use <h7> for address data, these aren't headings but additional data. Try to use regular text or microdata (google this) in this case
+  -->
       <h7>TEL: 06- 19 19 43 20   -    </h7>
-     
+
       <h7>E-MAIL: nutrination.co@gmail.com    -    </h7>
-      
+
       <h7>ADRESS: ZUIDPLEIN 343, ROTTERDAM, NETHERLANDS   -   </h7>
-      
+
       <h7>POST CODE: 30 83 CT</h7>
 </footer>
 </div>

@@ -8,18 +8,23 @@
 <body>
 
 <div>
- 
+
 <form method="get"  action="comment.txt">
  <fieldset>
 <h2> Want to stay informed? sign up for the newsletter! <h2>
   Name:
     <input type="text" name="pname" id="name" /><br />
    Email:
+   <!-- REVIEW try to look at labels, you should write it like this:
+   <label>Email
+   <input type="email" name=email" id="email" />
+   </label>
+ -->
    <br />
    <textarea name="comment" id="comment"> Enter your comment here </textarea>
    <br />
-   <input type="hidden" name="articleid" id="articleid"> 
-   <input type="submit" value="Submit" /> 
+   <input type="hidden" name="articleid" id="articleid">
+   <input type="submit" value="Submit" />
  </fieldset>
 </form>
 </div>
